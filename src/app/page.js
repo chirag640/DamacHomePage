@@ -1,9 +1,13 @@
+import Image from "next/image";
 import { IoMenu } from "react-icons/io5";
-
+import BookWith from '@/../public/assets/bookwith.png'
+import AreaStartsFrom from '@/../public/assets/areastartsfrom.png'
+import HandOverOn from '@/../public/assets/handoveron.png'
+import PaymentPlan from '@/../public/assets/paymentplan.png'
 export default function Home() {
   return (
-    <main>
-      <div className="relative h-screen overflow-hidden md:px-40 md:pt-10 lg:px-40 lg:pt-10">
+    <main className=''>
+      <section className="relative h-screen overflow-hidden md:px-40 md:pt-10 lg:px-40 lg:pt-10">
         {/* Background Image and Gradient */}
         <div className="absolute inset-0 bg-hero-pattern bg-right bg-cover">
           <div className="absolute inset-0 bg-gradient-to-b from-[#0C2546] to-[#188DF9] opacity-75"></div>
@@ -60,7 +64,33 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </div>
+      </section>
+      <section className='md:px-40  flex justify-between items-center'>
+        <div className='flex justify-center items-center flex-col'>
+          <Image src={BookWith}></Image>
+          <p>BOOK WITH</p>
+          <p>ONLY 20%</p>
+          <div className="w-10 h-0.5 bg-black bg-opacity-50 my-2"></div>
+        </div>
+        <div className='flex justify-center items-center flex-col'>
+        <Image src={AreaStartsFrom}></Image>
+          <p>Area Starts From</p>
+          <p>ONLY 20%</p>
+          <div className="w-10 h-0.5 bg-black bg-opacity-50 my-2"></div>
+        </div>
+        <div className='flex justify-center items-center flex-col'>
+        <Image src={HandOverOn}></Image>
+          <p>Hand Over On</p>
+          <p>ONLY 20%</p>
+          <div className="w-10 h-0.5 bg-black bg-opacity-50 my-2"></div>
+        </div>
+        <div className='flex justify-center items-center flex-col'>
+        <Image src={PaymentPlan}></Image>
+          <p>Payment Plan</p>
+          <p>ONLY 20%</p>
+          <div className="w-10 h-0.5 bg-black bg-opacity-50 my-2"></div>
+        </div>
+      </section>
     </main>
   );
 }

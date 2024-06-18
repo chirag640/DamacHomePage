@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -15,6 +16,7 @@ module.exports = {
       },
       fontFamily: {
         oswald: ['Oswald', 'sans-serif'],
+        poppins : ['Poppins' , 'sans-serif'],
       },
     },
   },

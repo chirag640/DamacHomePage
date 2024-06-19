@@ -7,8 +7,8 @@ This is an assignment project created with [Next.js](https://nextjs.org/) bootst
 First, clone the repository and navigate to the project directory:
 
 ```bash
-git clone [your-repo-url]
-cd [your-repo-directory]
+git clone https://github.com/chirag640/DamacHomePage.git
+cd DamacHomePage
 ```
 
 ## Then, install the dependencies:

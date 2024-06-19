@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from 'react-icons/md';
-import Rectangle89 from "@/../public/assets/Rectangle89.jpeg";
-import Rectangle90 from "@/../public/assets/Rectangle90.jpeg";
-import Rectangle92 from "@/../public/assets/Rectangle92.jpeg";
-import Rectangle93 from "@/../public/assets/Rectangle93.jpeg";
+import Rectangle89 from '@/../public/assets/Rectangle89.jpeg';
+import Rectangle90 from '@/../public/assets/Rectangle90.jpeg';
+import Rectangle92 from '@/../public/assets/Rectangle92.jpeg';
+import Rectangle93 from '@/../public/assets/Rectangle93.jpeg';
 
 const images = [Rectangle89, Rectangle90, Rectangle92, Rectangle93];
 
@@ -48,6 +48,9 @@ const FeaturesSection = () => {
             src={images[currentIndex]}
             alt="Carousel Image"
             className="transition-transform duration-500 rounded-2xl md:object-cover"
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL={images[currentIndex].src}
           />
         </div>
         <MdOutlineArrowForwardIos
@@ -64,6 +67,9 @@ const FeaturesSection = () => {
               alt={`Queue Image ${index}`}
               onClick={() => setCurrentIndex(index)}
               className="cursor-pointer rounded-lg"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={image.src}
             />
           </div>
         ))}

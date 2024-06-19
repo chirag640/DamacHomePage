@@ -4,17 +4,19 @@ import Gym from '@/../public/assets/gym.png';
 import FlotingPool from '@/../public/assets/flotingPool.jpeg';
 import SwimmingPool from '@/../public/assets/swimmingPool.jpeg';
 import Rooms from '@/../public/assets/rooms.jpeg';
+import HarbourLights from '@/../public/assets/harbourlights.png'
 
 const amenities = [
-  { image: FlotingPool, title: 'Floating Pools' },
-  { image: Rooms, title: 'Spacious Cabins Like Rooms' },
-  { image: SwimmingPool, title: 'Sea Facing Swimming Pools' },
-  { image: Gym, title: 'Gymnasium & Fitness' },
+  { image: Gym, title: 'Fully Equipped Gym' },
+  { image: FlotingPool, title: 'Floating Pool' },
+  { image: SwimmingPool, title: 'Swimming Pool' },
+  { image: Rooms, title: '3, 4, & 5 Bedroom Rooms' },
 ];
 
 const AmenitiesSection = () => {
   return (
-    <section className='flex justify-center items-center flex-col pt-14 px-4'>
+    <section className='flex flex-col items-center py-10 text-black'>
+      <Image src={HarbourLights}/>
       <p className='text-4xl font-bold mt-6 text-[#00357B] font-oswald'>Features & Amenities</p>
       <p className='w-4/5 md:w-1/2 text-center text-xl my-5 font-poppins tracking-normal font-medium'>Harbour Lights beautifully honours maritime voyages while embracing an opulent seafront lifestyle. Its maritime-inspired amenities provide an unmatched seaside experience, offering a life of tranquility and bliss.</p>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pl-10 md:pl-20 py-10">
@@ -25,6 +27,9 @@ const AmenitiesSection = () => {
                 className="w-32 h-32 rounded-full border-4 border-[#D9D9D9]"
                 src={amenity.image}
                 alt={amenity.title}
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={amenity.image.src}
               />
             </div>
             <p className="text-center text-[#00357B] font-bold text-xl font-oswald">{amenity.title}</p>

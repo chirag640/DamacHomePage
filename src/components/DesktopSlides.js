@@ -17,7 +17,7 @@ const DesktopSlides = () => {
     <div className="hidden md:flex justify-around items-center w-full space-x-4">
       {slides.map((slide, index) => (
         <div key={index} className="flex justify-center items-center flex-col">
-          <Image src={slide.image} alt={slide.title} />
+          <Image src={slide.image} alt={slide.title} loading="lazy" placeholder="blur" blurDataURL={slide.image.src} />
           <p>{slide.title}</p>
           <p>{slide.subtitle}</p>
           <div className="w-10 h-0.5 bg-black bg-opacity-50 my-2"></div>

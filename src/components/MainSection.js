@@ -6,7 +6,6 @@ import Navbar from './Navbar';
 const MainSection = () => {
   return (
     <section className="relative md:px-40 md:pt-10 h-screen overflow-hidden">
-      {/* Background Image and Gradient */}
       <div className="absolute inset-0 bg-hero-pattern bg-right bg-cover">
         <div className="absolute inset-0 bg-gradient-to-b from-[#0C2546] to-[#188DF9] opacity-75"></div>
       </div>
@@ -44,7 +43,7 @@ const MainSection = () => {
               GET A PRESENTATION
             </button>
           </div>
-          <div className="w-full h-px bg-black bg-opacity-25 my-2"></div>
+          <div className="w-full h-0.5 bg-black bg-opacity-50 my-2"></div>
           <p className="text-[#ffffff98] text-base pb-4 text-center">
             Get an Expert’s Presentation of Real <br /> Estate in Dubai for Life and investment
           </p>

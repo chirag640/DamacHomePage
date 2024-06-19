@@ -44,7 +44,7 @@ const MainSection = () => {
               GET A PRESENTATION
             </button>
           </div>
-          <div className="w-full h-0.5 bg-black bg-opacity-50 my-2"></div>
+          <div className="w-full h-px bg-black bg-opacity-25 my-2"></div>
           <p className="text-[#ffffff98] text-base pb-4 text-center">
             Get an Expert’s Presentation of Real <br /> Estate in Dubai for Life and investment
           </p>

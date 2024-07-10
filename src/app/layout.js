@@ -12,8 +12,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
-     <Script
-	src="//www.topcreativeformat.com/a936fa072d1848ddb1985bdd0a5db4e8/invoke.js"/>
     </html>
   );
 }

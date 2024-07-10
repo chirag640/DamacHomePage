@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import Script from 'next/script'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -12,6 +12,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
+    <Script
+	atOptions = {
+		'key' : 'a936fa072d1848ddb1985bdd0a5db4e8',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	}; />
+     <Script
+	src="//www.topcreativeformat.com/a936fa072d1848ddb1985bdd0a5db4e8/invoke.js"/>
     </html>
   );
 }
